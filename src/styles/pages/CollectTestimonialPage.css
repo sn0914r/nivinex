@@ -1,0 +1,513 @@
+/* Modern Testimonial Form Styles */
+.testimonial-wrapper {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #fff7ed 0%, #ffffff 100%);
+    padding: 1rem;
+  }
+  
+  @media (min-width: 576px) {
+    .testimonial-wrapper {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .testimonial-wrapper {
+      padding: 2rem;
+    }
+  }
+  
+  .testimonial-container {
+    max-width: 64rem;
+    margin: 0 auto;
+  }
+  
+  .testimonial-card {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    border: none;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(8px);
+    border-radius: 0.75rem;
+    overflow: hidden;
+  }
+  
+  .testimonial-header {
+    text-align: center;
+    padding: 2rem 0.5rem;
+    padding-bottom: 2rem;
+  }
+  
+  .header-icon {
+    width: 4rem;
+    height: 4rem;
+    background-color: #fed7aa;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+  }
+  
+  .header-icon svg {
+    width: 2rem;
+    height: 2rem;
+    color: #ea580c;
+  }
+  
+  .testimonial-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 1rem;
+  }
+  
+  @media (min-width: 576px) {
+    .testimonial-title {
+      font-size: 2.25rem;
+    }
+  }
+  
+  .testimonial-description {
+    font-size: 1.125rem;
+    color: #4b5563;
+    max-width: 32rem;
+    margin: 0 auto;
+    line-height: 1.75;
+  }
+  
+  
+  .testimonial-form {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 24px;
+    padding: 3rem;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15),
+      0 0 0 1px rgba(255, 255, 255, 0.1);
+    margin: 2rem 0;
+    position: relative;
+    overflow: hidden;
+    transform: translateY(0);
+    transition: all 0.3s ease;
+  }
+  
+  .testimonial-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 35px 70px rgba(0, 0, 0, 0.2),
+      0 0 0 1px rgba(255, 255, 255, 0.15);
+  }
+  
+  .testimonial-form::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: linear-gradient(
+      90deg,
+      #ff6b6b,
+      #4ecdc4,
+      #45b7d1,
+      #96ceb4,
+      #feca57
+    );
+    background-size: 300% 100%;
+    animation: gradient 3s ease infinite;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .form-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+  }
+  
+  .form-title {
+    color: #2c3e50;
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+  }
+  
+  .form-subtitle {
+    color: #6c757d;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.6;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .form-section {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .form-row {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .form-label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #374151;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    white-space: nowrap;
+  }
+  
+  .form-label svg {
+    width: 1rem;
+    height: 1rem;
+  }
+  
+  .form-input {
+    width: 100%;
+    height: 3rem;
+    padding: 0 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    transition: all 0.15s ease-in-out;
+    background-color: #ffffff;
+  }
+  
+  .form-input:focus {
+    outline: none;
+    border-color: #ea580c;
+    box-shadow: 0 0 0 3px rgba(234, 88, 12, 0.1);
+  }
+  
+  .form-input::placeholder {
+    color: #9ca3af;
+  }
+  
+  .form-textarea {
+    width: 100%;
+    min-height: 7.5rem;
+    padding: 0.75rem;
+    resize: none;
+    font-family: inherit;
+    line-height: 1.5;
+  }
+  
+  .character-count {
+    text-align: right;
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-top: 0.25rem;
+  }
+  
+  .rating-section {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(
+      135deg,
+      rgba(102, 126, 234, 0.05),
+      rgba(118, 75, 162, 0.05)
+    );
+    border-radius: 20px;
+    margin: 2rem 0;
+    border: 1px solid rgba(102, 126, 234, 0.1);
+    margin-bottom: 1.5rem;
+  }
+  
+  .rating-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #495057;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .star-rating-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  @media (min-width: 576px) {
+    .star-rating-container {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+  
+  .star-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  
+  .star-button {
+    padding: 0.25rem;
+    border-radius: 0.125rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out;
+  }
+  
+  .star-button:hover {
+    background-color: #f3f4f6;
+  }
+  
+  .star-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    transition: color 0.15s ease-in-out;
+  }
+  
+  .star-filled {
+    color: #ea580c;
+  }
+  
+  .star-empty {
+    color: #d1d5db;
+  }
+  
+  .upload-section {
+    margin-bottom: 1.5rem;
+  }
+  
+  .upload-area {
+    border: 2px dashed #d1d5db;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.15s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .upload-area:hover {
+    border-color: #fb923c;
+    background-color: rgba(254, 215, 170, 0.5);
+  }
+  
+  .upload-area.drag-active {
+    border-color: #ea580c;
+    background-color: #fed7aa;
+  }
+  
+  .upload-input {
+    display: none;
+  }
+  
+  .upload-icon {
+    width: 2rem;
+    height: 2rem;
+    color: #9ca3af;
+    margin: 0 auto 0.5rem;
+  }
+  
+  .upload-text {
+    font-size: 0.875rem;
+    color: #4b5563;
+    margin-bottom: 0.25rem;
+  }
+  
+  .upload-filename {
+    color: #ea580c;
+    font-weight: 500;
+  }
+  
+  .upload-subtext {
+    font-size: 0.75rem;
+    color: #6b7280;
+  }
+  
+  .consent-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 1rem;
+    background-color: #f9fafb;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .consent-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .consent-checkbox {
+    width: 1rem;
+    height: 1rem;
+    margin-top: 0.25rem;
+    accent-color: #ea580c;
+    cursor: pointer;
+  }
+  
+  .consent-label {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: #374151;
+    cursor: pointer;
+  }
+  
+  .submit-section {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 1rem;
+  }
+  
+  .submit-button {
+    width: 100%;
+    height: 3rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+    background-color: #ea580c;
+    color: white;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .submit-button:hover:not(:disabled) {
+    background-color: #c2410c;
+  }
+  
+  .submit-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .loading-spinner {
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid white;
+    border-top: 2px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .footer-info {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #4b5563;
+  }
+  
+  /* Enhanced Responsive Design */
+  @media (max-width: 768px) {
+    .testimonial-form-wrapper {
+      padding: 2rem 0;
+    }
+  
+    .testimonial-form {
+      padding: 2rem;
+      margin: 1rem 0;
+      border-radius: 20px;
+    }
+  
+    .form-title {
+      font-size: 2.5rem;
+    }
+  
+    .star-rating {
+      gap: 0.75rem;
+    }
+  
+    .star-icon {
+      width: 2.25rem;
+      height: 2.25rem;
+    }
+  
+    .submit-button {
+      padding: 1rem 2.5rem;
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .testimonial-form-wrapper {
+      padding: 1rem 0;
+    }
+  
+    .testimonial-form {
+      padding: 1.5rem;
+      border-radius: 16px;
+    }
+  
+    .form-title {
+      font-size: 2rem;
+    }
+  
+    .star-rating {
+      justify-content: center;
+      gap: 0.5rem;
+    }
+  
+    .star-icon {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  
+    .submit-button {
+      width: 100%;
+      padding: 1rem;
+    }
+  }
+  
+  /* Loading Animation */
+  @keyframes pulse {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .loading {
+    animation: pulse 1.5s ease-in-out infinite;
+  }
+  

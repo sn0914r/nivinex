@@ -1,0 +1,36 @@
+.testimonial-card {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: none;
+    position: relative;
+    margin-bottom: 2rem;
+  
+    &::before {
+      content: '"';
+      font-size: 4rem;
+      color: var(--primary-orange);
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      line-height: 1;
+    }
+  
+    .client-avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin: 0 auto 1rem;
+      background: var(--light-gray);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      color: var(--primary-orange);
+      font-weight: 600;
+    }
+  }
+  
