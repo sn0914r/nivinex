@@ -23,16 +23,16 @@ export default function Footer() {
                 We design and develop powerful web apps that are fast, functional, and future-ready.
             </p>
             <div className="social-links d-flex gap-3">
-              <a href="#" className="social-link" aria-label="Facebook">
+              {/* <a href="#" className="social-link" aria-label="Facebook">
                 <FiFacebook />
-              </a>
-              <a href="#" className="social-link" aria-label="Twitter">
+              </a> */}
+              {/* <a href="#" className="social-link" aria-label="Twitter">
                 <FiTwitter />
-              </a>
-              <a href="#" className="social-link" aria-label="LinkedIn">
+              </a> */}
+              <a href="https://www.linkedin.com/in/vinod-kumar-4b0b532ab" className="social-link" aria-label="LinkedIn">
                 <FiLinkedin />
               </a>
-              <a href="#" className="social-link" aria-label="Instagram">
+              <a href="https://www.instagram.com/nivinex_agency?igsh=bjh6cWdwbDN5N2dj" className="social-link" aria-label="Instagram">
                 <FiInstagram />
               </a>
             </div>

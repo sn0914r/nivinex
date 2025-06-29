@@ -1,9 +1,12 @@
-import React from "react";
+import { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "../styles/pages/NotFoundPage.css";
 
 export default function NotFoundPage() {
+  useEffect(()=>{
+    document.title="Not Found"
+  }, []);
   return (
     <div className="not-found-wrapper">
       {/* Background Text */}

@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import { FaStar, FaUser, FaBuilding, FaEnvelope, FaCommentDots, FaCamera } from "react-icons/fa"
 import "../styles/pages/CollectTestimonialPage.css";
 
@@ -14,6 +14,10 @@ export default function CollectTestimonialForm(){
   })
   const [hover, setHover] = useState(0);
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  useEffect(()=>{
+    document.title = "Testimonial"
+  }, [])
   
   const handleInputChange = useCallback((field, value)=>{
     setFormData(prev => ({...prev, [field]: value}));

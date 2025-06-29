@@ -23,7 +23,7 @@ export default function Header() {
     { label: 'About Us', id: 'about' },
     { label: 'Services', id: 'services' },
     { label: 'Portfolio', id: 'portfolio' },
-    { label: 'Testimonials', id: 'testimonials' },
+    // { label: 'Testimonials', id: 'testimonials' },
     { label: 'Contact', id: 'contact' }
   ];
 

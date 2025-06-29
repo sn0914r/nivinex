@@ -62,7 +62,7 @@ export default function ContactSection(){
 
 function Presenter({formData, handleSubmit, handleChange}){
   return(
-    <section id="contacct" className="section contact-section">
+    <section id="contact" className="section contact-section">
       <Container>
         
         <Row>

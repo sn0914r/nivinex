@@ -32,16 +32,16 @@ const AboutSection = () => {
           url: "https://github.com/sn0914r",
           label: "GitHub",
         },
-        {
-          icon: <FaLinkedin />,
-          url: "#",
-          label: "LinkedIn",
-        },
-        {
-          icon: <FiGlobe />,
-          url: "#",
-          label: "Portfolio",
-        },
+        // {
+        //   icon: <FaLinkedin />,
+        //   url: "#",
+        //   label: "LinkedIn",
+        // },
+        // {
+        //   icon: <FiGlobe />,
+        //   url: "#",
+        //   label: "Portfolio",
+        // },
       ],
     },
     {
@@ -59,19 +59,19 @@ const AboutSection = () => {
       socialLinks: [
         {
           icon: <FaGithub />,
-          url: "#",
+          url: "https://github.com/nani986690",
           label: "GitHub",
         },
         {
           icon: <FaLinkedin />,
-          url: "#",
+          url: "https://www.linkedin.com/in/vinod-kumar-4b0b532ab",
           label: "LinkedIn",
         },
-        {
-          icon: <FiGlobe />,
-          url: "#",
-          label: "Portfolio",
-        },
+        // {
+        //   icon: <FiGlobe />,
+        //   url: "#",
+        //   label: "Portfolio",
+        // },
       ],
     },
   ];
@@ -114,7 +114,7 @@ const AboutSection = () => {
             <div className="about-content">
               <h3 className="h2 mb-4">We Build Digital Excellence</h3>
               <p className="mb-4">
-                At Nivix, we're passionate about creating digital solutions that
+                At Nivinex, we're passionate about creating digital solutions that
                 make a difference. Our team of experienced developers,
                 designers, and strategists work together to deliver exceptional
                 results that exceed expectations.
@@ -141,7 +141,7 @@ const AboutSection = () => {
               </Row>
             </div>
           </Col>
-          <Col lg={6} className="d-none">
+          <Col lg={12}>
             <div className="developers-section">
               <h3 className="h2 mb-4 text-center">Our Developers</h3>
               <div className="developers-grid">
